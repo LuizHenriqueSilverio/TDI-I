@@ -3,6 +3,7 @@ h2 {
 }
 
 p {
+    font-family: 'Courier New', Courier, monospace;
     color: blue;
     font-size: medium;
 }
