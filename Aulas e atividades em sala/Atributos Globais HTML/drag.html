@@ -30,15 +30,26 @@
                 e.dataTransfer.setData("Text", e.target.id);
             });
 
+            b2.addEventListener('dragstart', e => { 
+                e.dataTransfer.setData("Text", e.target.id);
+            });
+
             divDrop.addEventListener('dragover', e =>{
                 e.preventDefault();
             });
 
             divDrop.addEventListener('drop', e => {
-                idElement = e.dataTransfer.getData('Text');
-                element = document.getElementById(idElement);
+                const idElement = e.dataTransfer.getData('Text');
+                const button = document.getElementById(idElement);
+                const action = e.target.getAttribute('dropzone');
             
-                e.target.appendChild(element);
+                if(action == "move") {
+                    e.target.appendChild(button);
+                }else if(action == "copy") {
+                    const buttonCopy = button.cloneNode(true);
+                    buttonCopy.setAttribute('id', 'cp' + idElement);
+                    e.target.appendChild(buttonCopy);
+                }
             });
         </script>
     </body>
