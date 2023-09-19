@@ -24,4 +24,10 @@ p {
 
 .highlight {
     background-color: beige;
+    font-weight: bold;
+}
+
+li.highlight {
+    font-weight: normal;
+    text-decoration: underline;
 }
