@@ -31,3 +31,7 @@ li.highlight {
     font-weight: normal;
     text-decoration: underline;
 }
+
+li em {
+    color: orange;
+}
