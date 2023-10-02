@@ -11,12 +11,24 @@ div {
 
 p {
     padding: 5px;
-    background: #84e;
+    background: #fff;
     margin: 2px 0px 2px 0;
+    border: 3px solid #f38;
+    border-radius: 1rem;
 }
 
 h1 {
     padding: 15px;
     padding-top: 5px;
     background: #84e;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 2rem;
+    border: 3px solid #84e;
+}
+
+a, button {
+    color: inherit;
 }
