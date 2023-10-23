@@ -1,13 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .grid-container {
+    height: 100vh;
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: purple;
     padding: 5px;
     gap: 2px;
+    justify-content: center;
+    align-content: center;
+    /*
+    justify-items: center;
+    align-items: center;
+    */
+    
 }
 
 .item-grid {
     color: #fff;
     background: rgba(255, 255, 255, 0.6);
+    border: 1px solid yellow;
     text-align: center;
+    height: 40px;
+    width: 100px;
+}
+
+.column-element {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
 }
