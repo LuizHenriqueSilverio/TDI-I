@@ -1,0 +1,152 @@
+:root {
+    --cinza-fundo: #f7f7f7;
+    --cinza-texto: #c6c6c6;
+    --vermelho: #ee2211;
+    --bordas: gray;
+    --fundo-botoes: #ffffff;
+    --texto-botoes: #000000;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cinza-fundo);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header > .header__logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid var(--bordas);
+    margin: 15px;
+}
+
+.header > .menu-nav > .button-nav {
+    padding: 10px 25px;
+    background-color: var(--fundo-botoes);
+    color: var(--texto-botoes);
+    border: 1px solid var(--bordas);
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.header > .menu-nav > .button-nav:hover {
+    background-color: var(--texto-botoes);
+    color: var(--fundo-botoes);
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.grid-container > .text-description {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    background-color: #ffffff;
+    font-size: 20px;
+    width: 500px;
+    height: 350px;
+}
+
+.grid-container > .text-description > h2 {
+    margin-right: 25px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+.grid-container > .text-description > p {
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.grid-container > .text-description > .btn-saiba-mais {
+    padding: 15px 25px;
+    background-color: var(--vermelho);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px 20px;
+}
+
+.grid-container > .text-description > .btn-saiba-mais:hover {
+    cursor: pointer;
+}
+
+.grid-container > .img-bike{
+    width: 500px;
+    height: 350px;
+}
+
+.grid-container > .img-bike > img{
+    width: 500px;
+    height: 350px;
+}
+
+.grid-container > .vantagens {
+    font-size: 64px;
+    text-align: right;
+    color: var(--cinza-texto);
+    font-weight: bold;
+}
+
+.grid-container > .vantagens > p {
+    padding: 20px;
+}
+
+.grid-container > .vantagens-list {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.vantagem-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.vantagem-container > img {
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.vantagem-container > .vantagem-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.vantagem-container > .vantagem-text > p{
+    text-align: left;
+    margin-top: 0;
+}
+
+.footer {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 20px;
+    font-weight: bold;
+}
