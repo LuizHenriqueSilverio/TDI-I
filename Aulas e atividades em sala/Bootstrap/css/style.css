@@ -1,0 +1,15 @@
+* {
+    color: white;
+}
+
+.row {
+    background-color: red;
+    padding: 2px;
+    margin: 5px;
+}
+
+[class^="col"] {
+    background-color: purple;
+    padding: 2px;
+    margin: 5px;
+}
